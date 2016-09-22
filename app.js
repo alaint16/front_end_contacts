@@ -5,7 +5,12 @@ $(document).ready(function() {
 
         var contact = {
             name: $(".name").val(),
-            lastname: $(".lastname").val()
+            lastname: $(".lastname").val(),
+            address: $(".address").val(),
+            email: $(".email").val(),
+            dob: $(".dob").val(),
+            title: $(".title").val(),
+            country: $(".country").val()
         }
 
         $.post("http://localhost:5454/contact", contact, function(result) {
