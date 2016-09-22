@@ -15,7 +15,15 @@ $(document).ready(function() {
 
         $.post("http://localhost:5454/contact", contact, function(result) {
             console.log(result)
+            $(.name).val(" ");
+            $(".lastname").val(" "),
+            $(".address").val(" "),
+            $(".email").val(" "),
+            $(".dob").val(" "),
+            $(".title").val(" "),
+            $(".country").val(" ")
         })
+
     })
 
 
